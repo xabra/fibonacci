@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int fibmax = 30;
+    int fibmax = 40;
 
     int fibprevprev = 0;
     int fibprev = 1;
