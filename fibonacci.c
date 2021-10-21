@@ -1,17 +1,18 @@
 #include <stdio.h>
 
+int fib(int i);
+
 int main() {
     int fibmax = 40;
 
-    int fibprevprev = 0;
-    int fibprev = 1;
-    int i = 1;
-    printf("%d: %d\n", i, fibprev);
-
-    for ( i=2; i < fibmax; i++) {
-        int fibnext = fibprev + fibprevprev;
-        printf("%d: %d\n", i, fibnext);
-        fibprevprev = fibprev;
-        fibprev = fibnext;
+    for (int i=1; i < fibmax; i++) {
+        printf("%d: %d\n", i, fib(i));
     }
+}
+
+int fib(int i) {
+    if (i<=2) {
+        return 1;
+    }
+    return fib(i-2) + fib(i-1);
 }
