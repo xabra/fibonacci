@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #include "../includes/fib.h"
+// Includes search path not working.  Had to make it explicit....why?
 
 int main()
 {
